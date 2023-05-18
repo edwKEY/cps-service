@@ -14,7 +14,7 @@ html{
 body {
     min-width: 320px;
     font-family: 'TT Lakes';
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .header {

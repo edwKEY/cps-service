@@ -14,7 +14,7 @@ html{
 body {
     min-width: 320px;
     font-family: 'TT Lakes';
-    overflow-x: hidden;
+    overflow: scroll;
 }
 
 .header {
@@ -198,6 +198,9 @@ main {
 
 /* Media - header*/
 @media (min-width: 768px) {
+    body {
+    overflow: hidden;
+    }
     .menu {
         min-height: 88px;
         align-items: center;
@@ -262,7 +265,9 @@ main {
 }
 
 @media (min-width: 1120px) {
-
+    body {
+    overflow: hidden;
+    }
     .container {
         display: flex;
         flex-direction: column;

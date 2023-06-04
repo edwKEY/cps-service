@@ -4,114 +4,96 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./styles.css">
         <title>CPS service</title>
     </head>
     <body>
-        <div class="container">
-            <header class="header">
 
-                <nav class="menu">
+        <header>
+            <nav class="menu">
 
-                    <button class="menu__btn menu__burger"></button>
+                <button class="menu__btn menu__burger"></button>
 
-                    <div class="vertical_stripe__left"></div>
+                <div class="vertical_stripe__left"></div>
 
-                    <div class="logo">
-                        <a href="#">
-                            <img src="image/logo.png" alt="logo">
-                        </a>
-                    </div>
+                <button class="logo"></button> 
 
-                    <div class="empty_element"></div>
+                <div class="empty_element"></div>
 
-                    <div class="contacts">
-                        <button class="menu__btn menu__phone"></button>
-                        <button class="menu__btn menu__chat"></button>
-                        <button class="menu__btn menu__profile"></button>
-                    </div>
+                <div class="contacts">
+                    <button class="menu__btn menu__phone"></button>
+                    <button class="menu__btn menu__chat"></button>
+                    <button class="menu__btn menu__profile"></button>
+                </div>
 
-                    <div class="vertical_stripe_right"></div>
-                    
-                    <div class="menu__long">
-                        <span class="additional_info">Оставить заявку</span>
-                        <button class="menu__btn menu__support"></button>
-                    </div>
+                <div class="vertical_stripe_right"></div>
+                
+                <div>
+                    <button class="menu__btn menu__support"></button>
+                    <button class="menu__btn menu__search"></button>
+                </div>
 
-                    <div class="menu__long">
-                        <span class="additional_info">Статус ремонта</span>
-                        <button class="menu__btn menu__search"></button>
-                    </div>
+            </nav>
 
-                </nav>
+            <div class="menu__high">
+                <nav class="menu__high_style">
 
-                <div class="services">
-                        <div class="services__highlight"></div> 
+                    <div class="header__service__wrapper">
                         <h1>Услуги и сервисы</h1>
-                </div>
-            </header>
+                    </div>
+                    
+                    <div class="menu__stripe">
 
-            <main>
-                <nav class="slide__menu">
-                    <button class="slide__menu__btn one active_btn">Ремонтируемые устройства</button>
-                    <button class="slide__menu__btn two not_active_btn">Дополнительные услуги</button>
-                    <button class="slide__menu__btn three not_active_btn">Цены на услуги</button>
-                    <button class="slide__menu__btn four not_active_btn">Специальные цены</button>
-                    <button class="slide__menu__btn five not_active_btn">Ремонтируемые бренды</button>
-                    <button class="slide__menu__btn six not_active_btn">Адреса сервисных центров</button>
-                    <button class="slide__menu__btn seven not_active_btn">Отзывы</button>
+                        <label for="button_support">Оставить заявку</label>
+                        <button id="button_support" class="menu__btn menu__support"></button>
+
+                        <label class="padding_for_btn" for="button_serch">Статус ремонта</label>
+                        <button id="button_serch" class="menu__btn menu__search"></button>
+
+                        
+                    </div>
+
                 </nav>
+            </div>
 
-                <div class="container__content">
+        </header>
 
-                    <div class="main__info">
+        <main>
 
-                        <section class="text__info__small">
-                            Мы являемся авторизованным<br>
-                            сервисным центром по ремонту техники<br>
-                            Dell. Только у нас вы можете<br> 
-                            отремонтировать свой ноутбук Dell с<br> 
-                            официальной гарантией производителя.<br>
-                        </section>
+            <div class="service__wrapper">
+                <h1>Услуги и сервисы</h1>
+            </div>
+    
+            <nav>
+                <ul class="slide__menu">
+                    <li class="slide__menu__active slide__menu__first"><a href="#">Ремонтируемые устройства</a></li>
+                    <li class="slide__menu__second"><a href="#">Дополнительные услуги</a></li>
+                    <li class="slide__menu__third"><a href="#">Цены на услуги</a></li>
+                    <li class="slide__menu__four"><a href="#">Специальные цены</a></li>
+                    <li class="slide__menu__five active_to_high"><a href="#">Ремонтируемые бренды</a></li>
+                    <li class="slide__menu__six"><a href="#">Адреса сервисных центров</a></li>
+                    <li class="slide__menu__seven"><a href="#">Отзывы</a></li>
+                </ul>
+            </nav>
 
-                        <section class="text__info__middle">
-                            Мы являемся авторизованным сервисным<br>
-                            центром по ремонту техники Dell. Только у нас<br>
-                            вы можете отремонтировать свой ноутбук<br>
-                            Dell с официальной гарантией<br> 
-                            производителя.<br>
-                            <br>
-                            Мы успешно работаем с 1992 года и<br>
-                            заслужили репутацию надежного партнера
-                        </section>
+            <section class="main__section">
 
-                        <section class="text__info__heigh">
-                            Мы являемся авторизованным сервисным центром по ремонту техники<br>
-                            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с<br>
-                            официальной гарантией производителя.<br>
-                            <br>
-                            Мы успешно работаем с 1992 года и заслужили репутацию надежного<br>
-                            партнера, что подтверждает большое количество постоянных клиентов.<br>
-                            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою<br>
-                            очередь, советуют нас родным и близким.
-                        </section>
-                            
-                        <div class="more">
-                            <div>
-                                <img src="image/expand.png" alt="expand">
-                            </div>
-                            <span class="more__text">Читать далее</span>
-                        </div>
-
+                <article>
+                    <p class="text__info__small">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                    <p class="text__info__heigh">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
+                    <p class="text__info__very-heigh">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+    
+                    <div class="expand__wrapper">
+                        <h3>Читать далее</h3>
                     </div>
 
-                    <div class="office">
-                        <img class="office__image" src="https://edwKEY.github.io/image/image_3223.png" alt="photo">
-                    </div>
+                </article>
+        
+                <img class="office_image image_decoration" src="./i/_MG_3223.jpg" alt="office">
 
-                </div>
+            </section>
+            
+        </main>
 
-            </main>
-        </div>
     </body>
 </html>
